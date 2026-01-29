@@ -47,10 +47,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: Build repo
-          uses: actions/checkout@v4
   
         - name: Setup Env
-          # uses: denoland/setup-deno@v1
   
-        - name: Run 
-        run: deno test -A
+        - name: Go 
+        run: deno test B
