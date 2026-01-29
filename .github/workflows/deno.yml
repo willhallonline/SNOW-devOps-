@@ -44,8 +44,8 @@ jobs:
         run: deno test B
 
   deploy:
-    name: build
-    needs: test
+    name: Deploy
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to prod
